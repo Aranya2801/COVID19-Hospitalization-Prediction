@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Models (large binaries — re-train locally)
+models/saved/*.pkl
+models/saved/*.joblib
+!models/saved/.gitkeep
+
+# Data (provide via DVC or instructions)
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
